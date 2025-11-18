@@ -1,23 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuzya Anmount</title>
     <style>
-        body {
+        * {
             margin: 0;
-            padding: 50px;
-            background: black;
-            text-align: center;
+            padding: 0;
+            box-sizing: border-box;
         }
-        video {
-            width: 80%;
-            height: auto;
+        
+        body {
+            background-color: #ffff00; /* Жовтий фон */
+            color: #000000; /* Чорний текст */
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .title {
+            font-size: 48px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-weight: bold; /* Жирний текст */
+            text-transform: uppercase;
+        }
+        
+        .events {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .event {
+            font-size: 24px;
+            font-weight: normal; /* Не жирний текст */
         }
     </style>
 </head>
 <body>
-    <video autoplay loop playsinline controls>
-        <!-- Заміни це посилання на пряме посилання твого відео -->
-        <source src="https://youtu.be/k8HVRLdMEUU/ingamelobby2.mp4" type="video/mp4">
-    </video>
+    <div class="container">
+        <h1 class="title">/Kuzya_Anmount</h1>
+        
+        <div class="events">
+            <div class="event">Next Event - December 18</div>
+            <div class="event">Next Event - December 31</div>
+        </div>
+    </div>
 </body>
 </html>
